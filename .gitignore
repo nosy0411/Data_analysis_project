@@ -2,8 +2,8 @@
 *.xls
 *.pdf
 *.docs
-*.ppt
-*.pptx
+# *.ppt
+# *.pptx
 *.dll
 *.exe
 *.o
