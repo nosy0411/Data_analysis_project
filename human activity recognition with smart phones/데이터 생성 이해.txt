@@ -1,0 +1,18 @@
+phm 데이터 생성에 대한 이해
+
+http://blog.naver.com/PostView.nhn?blogId=lagrange0115&logNo=220767476955&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+
+모션이 발생한 직후에는 가속도 센서는 모션에 의한 가속도 때문에 정확도가 떨어지는 반면 
+자이로 센서는 아직 누적 오차가 많이 쌓이지 않아 비교적 정확합니다. 
+
+반면, 모션이 발생하고 시간이 지난 뒤에는 가속도 센서는 중력가속도의 성분만을 통해 각도를 추정하여 비교적 정확하며, 
+자이로 센서는 누적오차 발생으로 인해 정확도가 떨어집니다. 
+따라서 가속도 센서와 자이로 센서의 장점을 적절히 활용하여 물체의 기울기 혹은 자세를 측정하는 것이 중요하다.
+
+
+이런 가속도 센서와 자이로 센서를 융합하여 장점을 살리고 단점을 보완하는 상보 필터를 구성할 수 있다.
+
+원리는 이거 http://blog.naver.com/PostView.nhn?blogId=lagrange0115&logNo=220768965088&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+
+
+
